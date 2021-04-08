@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservia - OC</title>
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style\style.css">
     <script src="https://kit.fontawesome.com/78df1d66fd.js" crossorigin="anonymous"></script>
 
 </head>
@@ -15,29 +15,31 @@
     <header>
         <img src="images\logo\Reservia.svg" alt="logo reservia">
         <nav>
-            <a href="#hebergements">Hébergements</a>
-            <a href="#activites">Activités</a>
-            <a href="#">S'inscrire</a>
+            <a class="navlink" href="#hebergements">Hébergements</a>
+            <a class="navlink" href="#activites">Activités</a>
+            <a class="coloractive navlink" href="#"><strong>S'inscrire</strong></a>
         </nav>
     </header>
 
     <!-- Main -->
     <main>
         <section>
-            <h1>Trouvez votre hébergement pour des vancances de rêve</h1>
-            <p>En plein centre ville  ou en pleine nature</p>
-            <form method="post" action="traitement.html">
-                <i class="fas fa-map-marker-alt"></i>
-                <input type="search" placeholder="Marseille, France">
-                <button>Recherche</button>
+            <h1 class="firsttitle">Trouvez votre hébergement pour des vancances de rêve</h1>
+            <p class="firstparagraph">En plein centre ville  ou en pleine nature</p>
+            <form>
+                <i class="fas fa-map-marker-alt formsearch mapsearchicone"></i>
+                <input class="formsearch" type="search" placeholder="Marseille, France">
+                <button class="formsearch">Recherche</button>
             </form>
-            <h2>Filtres</h2>
-            <ul>
-                <li><i class="fas fa-money-bill-wave"></i><a> Economiques</a></li>
-                <li><i class="fas fa-child"></i><a> Familial</a></li>
-                <li><i class="fas fa-heart"></i><a> Romantique</a></li>
-                <li><i class="fas fa-dog"></i><a> Animaux autorisés</a></li>
-            </ul>
+            <div class="filterline">
+                <h2 class="filterh2">Filtres</h2>
+                <ul class="filterlist">
+                    <li class="filteritem"><a class="filterlink" href="#" ><div class="filtericon"><i class="fas fa-money-bill-wave"></i></div>Economiques</a></li>
+                    <li class="filteritem"><a class="filterlink" href="#" ><div class="filtericon"><i class="fas fa-child"></i></div>Familial</a></li>
+                    <li class="filteritem"><a class="filterlink" href="#" ><div class="filtericon"><i class="fas fa-heart"></i></div>Romantique</a></li>
+                    <li class="filteritem"><a class="filterlink" href="#" ><div class="filtericon"><i class="fas fa-dog"></i></div>Animaux autorisés</a></li>
+                </ul>
+            </div>
             <p><i class="fas fa-info"></i> Plus de 500 logements sont disponibles dans cette ville</p>
         </section>
 
@@ -146,7 +148,7 @@
         </section>
 
         <!-- Section Populaires -->
-        <section>
+        <aside>
             <div><h2>Les plus populaires</h2><i class="fas fa-chart-line"></i></div>
             <article>
                 <img>
@@ -184,7 +186,7 @@
                     <i class="far fa-star"></i>
                 </div>
             </article>
-        </section>
+        </aside>
 
         <!-- Section Activités -->
         <section id="activites">
