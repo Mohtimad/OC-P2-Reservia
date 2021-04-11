@@ -1,7 +1,316 @@
+@media screen and (max-width: 650px){  /*mobile*/
+
+    .buttonDesktopTablet{
+        display: none;
+    }
+
+    .formSearch:placeholder-shown {
+        border-color: transparent;
+      }
+
+    form{
+        justify-content: space-between;
+        border: 1px solid #F2F2F2;
+        border-radius: 20px;
+    }
+
+    input{
+        width: 100%;
+    }
+    
+    .buttonMobile{
+        border-radius: 15px;
+        transform: scale(1.05);
+    }
+
+    .buttonMobile:hover i{
+        transform: scale(1.3);
+        transition: .3s;
+    }
+
+    .asideArticle{     
+        width: auto; 
+        display: flex;
+        align-items: center;
+        padding-left: 5px;
+        height: 145px;
+    }
+
+    .asideDivImg{
+        margin-right: 20px;
+        height: 135px;
+        min-width: 30%;
+        border-radius: 20px 0 0 20px;
+    }
+
+    .asideInfo{
+        height: 135px;
+        justify-content: space-between;
+    }
+
+    .accommodationArticle{
+        width: auto;
+    }
+
+    .activityBlockLeft, .activityBlockRight{
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    .activityContener * * * figure{
+    margin-bottom: 30px;
+    }
+
+    .activityXLargeBlock, .activityLargeBlock, .activitySmallBlock, .activityMediumBlock{
+        height: 200px;
+        width: 100%;
+    }
+
+    .activityContener{
+        flex-direction: column;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+    
+}
+
+@media screen and (max-width: 1439px) and (min-width: 651px){  /*tablet*/
+ 
+    .asideArticle{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        height: 200px;
+        padding: 5px;
+    }
+
+    .asideArticleList{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .asideLink{
+        width: 30%;
+    }
+
+    .asideDivImg{
+        margin-right: 20px;
+        height: 100%;
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .asideInfo{
+        height: 45%;
+        padding: 0 10px;
+    }
+
+    .accommodationDisplay{
+        width: 30%;
+    }
+
+    .activityXLargeBlock, .activityLargeBlock, .activitySmallBlock, .activityMediumBlock{
+        height: 200px;
+        width: 100%;
+    }
+
+    .activityColumn2, .activityColumn4{
+        display: flex;
+        justify-content: space-around;
+        width: 66.6%;
+    }
+
+    .activityColumn1, .activityColumn3{
+        display: flex;
+        justify-content: space-around;
+        width: 33.3%;
+    }
+
+    .activityContener{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .activityContener * * a{
+        display: block;
+        width: 100%;
+        }
+
+        .activityPadding{
+            margin-right: 40px;
+        }
+    
+    .activityBlockLeft{
+        margin-bottom: 40px;
+    }
+}
+
+
+
+@media screen and (min-width: 1440px){  /*desktop*/
+
+    body{
+        max-width: 1440px;
+        padding: 0 50px 0 50px;
+    }
+
+    .headerTopBlock{
+        height: 120px;
+    }
+
+    .navLinkMobileTabletButton{
+        display: none;
+    }
+
+    aside{     
+        width: 420px;
+        border-radius: 30px;
+    }
+
+    .asideArticle{      
+        display: flex;
+        align-items: center;
+        padding-left: 5px;
+        height: 145px;
+    }
+
+    .asideDivImg{
+        margin-right: 20px;
+        height: 135px;
+        min-width: 35%;
+        border-radius: 20px 0 0 20px;
+    }
+    
+    .asideInfo{
+        height: 135px;
+        justify-content: space-between;
+    }
+
+
+    #accommodation{
+        margin: 0 40px 0 0 ;
+        max-width: 880px;
+        background-color: #F2F2F2;
+    }
+
+    .accommodationArticle{
+        max-width: 245px;
+    }
+        
+    .activityContener{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .activityXLargeBlock{
+        height: 480px;
+    }
+    
+    .activityLargeBlock{
+        height:270px;
+    }
+    
+    .activitySmallBlock{
+        height: 170px;
+    }
+    
+    .activityMediumBlock{
+        height: 220px;
+    }
+
+    .activityColumn1, .activityColumn2, .activityColumn3, .activityColumn4{
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .activityBlockLeft, .activityBlockRight{
+        justify-content: space-around;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1439px){  /*tablet & mobile*/
+
+    .headerTopBlock{
+        padding-left: 30px;
+        margin-top: 20px;
+        height: 80px;
+    }
+
+    .navLinkDesktopButton{
+        display: none;
+    }
+
+    .firstBlock{
+        flex-direction: column-reverse;
+    }
+
+    .filterSection{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .navMobileTabet{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .navLinkMobileTablet{
+        padding: 10px 30px;
+        text-decoration: none;
+        border-bottom: 4px solid transparent;
+        color: black;
+        font-size: 1rem;
+        width: 50%;
+    }
+
+    .navLinkMobileTablet:hover{
+        border-bottom: 4px solid #0065FC;
+    }
+
+    aside{     
+        width: auto;
+    }
+
+    #accommodation{
+        width: auto;
+    }
+
+    .activityTitle{
+        padding-left: 40px;
+    }
+
+    .activityContener{
+        padding: 0 40px;
+    }
+}
+
+
+@media screen and (min-width: 651px){  /*desktop & tablet*/
+
+    .buttonMobile{
+        display: none;
+    }
+
+    button{
+        background-color: #0065FC;
+        color: white;
+        font-size: 0.8rem;
+        border-radius: 0 15px 15px 0;
+    }
+
+    button:hover{
+        text-decoration: underline;
+    }
+}
+
 body{
-    max-width: 1440px;
     margin: auto;
-    padding: 0 50px 0 50px;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -10,13 +319,10 @@ a{
     color: black;
 }
 
-header{
-    height: 120px;
+.headerTopBlock{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    align-content: center;
 }
 
 nav{
@@ -55,8 +361,6 @@ nav{
 form{
     display: flex;
 	flex-direction: row;
-	flex-wrap: nowrap;
-	align-content: stretch;
 }
 
 .formSearch{
@@ -78,7 +382,6 @@ form{
 }
 
 button{
-    border-radius: 0 15px 15px 0;
     background-color: #0065FC;
     color: white;
     font-size: 0.8rem;
@@ -133,7 +436,7 @@ button{
     align-items: center;
     height: 50px;
     width: 50px;
-    transform: scale(1.11, 1.11);
+    transform: scale(1.11);
     background-color: #deebff;
     border-radius: 50%;
     color: #0065FC;
@@ -162,16 +465,13 @@ button{
 }
 
 .firstBlock{
-    display:flex;
+    display: flex;
     margin: 0;
     padding: 0;
 }
 
 #accommodation{
-    margin: 0 40px 0 0 ;
-    width: 880px;
     padding: 30px 15px 40px 40px;
-    background-color: #F2F2F2;
     border-radius: 30px;
     display: flex;
     flex-wrap: wrap;
@@ -183,29 +483,29 @@ button{
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
 }
 
 .accommodationArticle{
-    width: 245px;
-    height: 200px;
+    height: 210px;
     background-color: white;
     margin: 10px 25px 25px 0;
     border-radius: 25px;
     font-size: 0.9rem;
 }
 
-.accommodationImg{
-    width: 100%;
-}
-
 .accommodationDivImg{
     overflow: hidden;
-    width: 235px;
-    height: 115px;
+    width: auto;
+    height: 110px;
     border-radius: 20px 20px 0 0;
+}
+
+.accommodationImg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .accommodationFigure{
@@ -233,6 +533,11 @@ button{
 }
 
 .accommodationLink:hover .accommodationImg{
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.accommodationLink:hover{
     transform: scale(1.05);
     transition: .5s;
 }
@@ -254,15 +559,14 @@ button{
 aside{
     margin: 0;
     padding: 30px 35px 0px 35px;
-    width: 420px;
     background-color: #F2F2F2;
-    border-radius: 30px;
 }
 
 .asideTitlePopular{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 
 }
 
@@ -271,39 +575,28 @@ aside{
 }
 
 .asideArticle{
-    
-    padding-left: 5px;
-    height: 145px;
     background-color: white;
-    margin: 10px 0 30px 0;
     border-radius: 25px;
-    display: flex;
-    align-items: center;
 }
 
 .asideDivImg{
     position: relative;
     overflow: hidden;
-    margin-right: 20px;
-    height: 135px;
-    min-width: 125px;
-    border-radius: 20px 0 0 20px;
 }
 
 .asideImg{
     position: absolute;
-    min-width: 100%;
+    width: 100%;
     height: 100%;
     border-radius: inherit;
+    object-fit: cover;
 }
 
 
 .asideInfo{
     font-size: 0.9rem;
-    height: 135px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 .asideStarList{
@@ -327,6 +620,7 @@ aside{
 }
 
 .asideLink{
+    margin: 10px 0 30px 0;
     border-radius: 25px;
     display: block;
     box-shadow: 2px 2px 30px rgb(201, 201, 201), -2px -2px 30px rgb(201, 201, 201);
@@ -338,91 +632,79 @@ aside{
     transition: .5s;
 }
 
+.asideLink:hover .asideImg{
+    transform: scale(1.1);
+    transition: .5s;
+}
+
 #activity{
     display: flex;
     flex-direction: column;
-    
-    font-size: 0.8rem;
+    margin: 40px 0 60px 0;
 }
 
 .activityTitle{
-    font-size: 1.5rem;
-    margin: 60px 0 30px 0;
-}
-
-.activityContener{
-    margin: 0 0 40px 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
+    margin: 40px 0;
 }
 
 .activityBlock{
     margin: 0;
-    padding: 0;
-    width: 330px;  
-    height: 450px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
 }
 
-.activityBlocMarginOff{
-    margin: 0;
-}
-
-.activitySmallTitle{
-    padding: 15px 20px;
-    margin: 0;
-    width: auto;
-}
-
-.activityBlockProperty, .activityLongBlockProperty{
+.activityBlockLeft, .activityBlockRight{
     display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    border-radius: 25px;
-    overflow: hidden;
 }
 
-.activityLargeBlock{
-    height: 240px;
-}
-
-.activityMediumBlock{
-    height: 205px;
-}
-
-.activitySmallBlock{
-    height: 165px;
+.activityColumn1, .activityColumn2, .activityColumn3, .activityColumn4{
+    border-radius: 30px;
 }
 
 .activityDivImg{
     position: relative;
-    width: auto;
+    width: 100%;
     height: 100%;
+    overflow: hidden;
+    border-radius: 30px 30px 0 0;
 }
 
 .activityImg{
     position: absolute;
+    width: 100%;
     height: 100%;
-    min-width: 100%;
+    object-fit: cover;
+}
+
+.activitySmallTitle{
+    margin: 0;
+    padding: 0 20px;
+}
+
+.activityBlock figcaption{
+    height: 80px;
+    display: flex;
+    align-items: center;
 }
 
 .activityLink{
-    box-shadow: 2px 2px 15px rgb(230, 230, 230), -2px -2px 15px rgb(230, 230, 230);
+    box-shadow: 2px 2px 15px rgba(201, 201, 201, 0.5), -2px -2px 15px rgba(201, 201, 201, 0.5);
+    border-radius: 30px;
+}
+
+.activityLink:hover .activityImg{
+    transform: scale(1.1);
+    transition: .5s;
 }
 
 .activityLink:hover{
     transform: scale(1.05);
-    transition: .3s;
+    transition: .5s;
 }
 
 footer{
-    height: 180px;
-    font-size: 0.8rem;
+    font-size: 1rem;
     margin: 20px 0 0 0;
     padding: 40px 0 0 0;
     background-color: #F2F2F2;
@@ -431,12 +713,16 @@ footer{
 
 footer ul{
     list-style: none;
-    padding: 0;
+    padding: 0 0 30px 0;
     margin: 0;
 }
 
 footer li{
     margin-bottom: 15px;
+}
+
+footer li:hover{
+    text-decoration: underline;
 }
 
 .footerBlock{

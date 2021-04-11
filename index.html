@@ -15,23 +15,30 @@
 
     <!-- Header -->
     <header>
-        <img src="images\logo\Reservia.svg" alt="logo reservia">
-        <nav>
-            <a class="navLink" href="#accommodation">Hébergements</a>
-            <a class="navLink" href="#activity">Activités</a>
-            <a class="colorActive navLink" href="#"><strong>S'inscrire</strong></a>
+        <div class="headerTopBlock">
+            <img src="images\logo\Reservia.svg" alt="logo reservia">
+            <nav>
+                <a class="navLink navLinkDesktopButton" href="#accommodation">Hébergements</a>
+                <a class="navLink navLinkDesktopButton" href="#activity">Activités</a>
+                <a class="colorActive navLink" href="#"><strong>S'inscrire</strong></a>
+            </nav>
+        </div>
+        <nav class="navMobileTabet">
+            <a class="navLinkMobileTablet navLinkMobileTabletButton" href="#accommodation">Hébergements</a>
+            <a class="navLinkMobileTablet navLinkMobileTabletButton" href="#activity">Activités</a>
         </nav>
     </header>
 
     <!-- Main -->
     <main>
-        <section>
+        <section class="filterSection">
             <h1 class="firstTitle">Trouvez votre hébergement pour des vancances de rêve</h1>
             <p class="firstParagraph">En plein centre ville  ou en pleine nature</p>
             <form>
                 <i class="fas fa-map-marker-alt formSearch mapSearchIcone"></i>
                 <input class="formSearch" type="search" placeholder="Marseille, France">
-                <button class="formSearch">Recherche</button>
+                <button class="formSearch buttonDesktopTablet">Recherche</button>
+                <button class="formSearch buttonMobile"><i class="fas fa-search"></i></button>
             </form>
             <div class="filterLine">
                 <h2 class="filterTitle">Filtres</h2>
@@ -181,66 +188,68 @@
                 <div class="asideTitlePopular">
                     <h2>Les plus populaires</h2><div class="asideIcon"><i class="fas fa-chart-line"></i></div>
                 </div>
-                <a href="#" class="asideLink">
-                    <article class="asideArticle">
-                        <div class="asideDivImg">
-                            <img class="asideImg" src="images\hebergements\3_medium\emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin">
-                        </div>
-                        <div class="asideInfo">
-                            <h3 class="asideTitle">Hôtel Le soleil du matin</h3>
-                            <div class="asidePriceStar">
-                                <p class="asidePrice">Nuit à partir de <strong>128€</strong></p>
-                                <div class="asideStarList">
-                                    <i class="fas fa-star starOn"></i>
-                                    <i class="fas fa-star starOn"></i>
-                                    <i class="fas fa-star starOn"></i>
-                                    <i class="fas fa-star starOn"></i>
-                                    <i class="fas fa-star starOn"></i>
+                <div class="asideArticleList">
+                    <a href="#" class="asideLink">
+                        <article class="asideArticle">
+                            <div class="asideDivImg">
+                                <img class="asideImg" src="images\hebergements\3_medium\emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin">
+                            </div>
+                            <div class="asideInfo">
+                                <h3 class="asideTitle">Hôtel Le soleil du matin</h3>
+                                <div class="asidePriceStar">
+                                    <p class="asidePrice">Nuit à partir de <strong>128€</strong></p>
+                                    <div class="asideStarList">
+                                        <i class="fas fa-star starOn"></i>
+                                        <i class="fas fa-star starOn"></i>
+                                        <i class="fas fa-star starOn"></i>
+                                        <i class="fas fa-star starOn"></i>
+                                        <i class="fas fa-star starOn"></i>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </article>
-                </a>
-                <a href="#" class="asideLink">
-                    <article class="asideArticle">
-                        <div class="asideDivImg">
-                            <img class="asideImg" src="images\hebergements\3_medium\aw-creative-VGs8z60yT2c-unsplash.jpg" alt="" / >
-                        </div>
-                        <div class="asideInfo">
-                            <h3 class="asideTitle">Au cœur de l'eau Chambre d'hôtes</h3>
-                            <div class="asidePriceStar">
-                                    <p class="asidePrice">Nuit à partir de <strong>71€</strong></p>
-                                <div class="asideStarList">
-                                    <i class="fas fa-star starOn"></i>
-                                    <i class="fas fa-star starOn"></i>
-                                    <i class="fas fa-star starOn"></i>
-                                    <i class="fas fa-star starOn"></i>
-                                    <i class="fas fa-star starOff"></i>
+                        </article>
+                    </a>
+                    <a href="#" class="asideLink">
+                        <article class="asideArticle">
+                            <div class="asideDivImg">
+                                <img class="asideImg" src="images\hebergements\3_medium\aw-creative-VGs8z60yT2c-unsplash.jpg" alt="" / >
+                            </div>
+                            <div class="asideInfo">
+                                <h3 class="asideTitle">Au cœur de l'eau Chambre d'hôtes</h3>
+                                <div class="asidePriceStar">
+                                        <p class="asidePrice">Nuit à partir de <strong>71€</strong></p>
+                                    <div class="asideStarList">
+                                        <i class="fas fa-star starOn"></i>
+                                        <i class="fas fa-star starOn"></i>
+                                        <i class="fas fa-star starOn"></i>
+                                        <i class="fas fa-star starOn"></i>
+                                        <i class="fas fa-star starOff"></i>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </article>
-                </a>
-                <a href="#" class="asideLink">
-                    <article class="asideArticle">
-                        <div class="asideDivImg">
-                            <img class="asideImg" src="images\hebergements\3_medium\febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout bleu et Blanc">
-                        </div>
-                        <div class="asideInfo">
-                            <h3 class="asideTitle">Hôtel Tout bleu et Blanc</h3>
-                            <div class="asidePriceStar">
-                                <p class="asidePrice">Nuit à partir de <strong>68€</strong></p>
-                                <div class="asideStarList">
-                                    <i class="fas fa-star starOn"></i>
-                                    <i class="fas fa-star starOn"></i>
-                                    <i class="fas fa-star starOn"></i>
-                                    <i class="fas fa-star starOn"></i>
-                                    <i class="fas fa-star starOff"></i>
+                        </article>
+                    </a>
+                    <a href="#" class="asideLink">
+                        <article class="asideArticle">
+                            <div class="asideDivImg">
+                                <img class="asideImg" src="images\hebergements\3_medium\febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout bleu et Blanc">
+                            </div>
+                            <div class="asideInfo">
+                                <h3 class="asideTitle">Hôtel Tout bleu et Blanc</h3>
+                                <div class="asidePriceStar">
+                                    <p class="asidePrice">Nuit à partir de <strong>68€</strong></p>
+                                    <div class="asideStarList">
+                                        <i class="fas fa-star starOn"></i>
+                                        <i class="fas fa-star starOn"></i>
+                                        <i class="fas fa-star starOn"></i>
+                                        <i class="fas fa-star starOn"></i>
+                                        <i class="fas fa-star starOff"></i>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </article>
-                </a>
+                        </article>
+                    </a>
+                </div>
             </aside>
         </div>
 
@@ -248,71 +257,78 @@
         <section id="activity">
             <h2 class="activityTitle">Activités à marseille</h2>
             <div class="activityContener">
-                <a href="#activity">
-                    <figure class="activityBlock activityLongBlockProperty activityLink">
-                        <div class="activityDivImg">
-                            <img class="activityImg" src="images\activites\3_medium\reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">
-                        </div>
-                        <figcaption>
-                            <h3 class="activitySmallTitle">Vieux Port</h3>
-                        </figcaption>
-                    </figure>
-                </a>
-                <div class="activityBlock">
-                    <a href="#activity">
-                        <figure class="activityBlocMarginOff activityLargeBlock activityBlockProperty activityLink">
-                            <div class="activityDivImg">
-                                <img class="activityImg" src="images\activites\3_medium\paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
-                            </div>
-                            <figcaption>
-                                <h3 class="activitySmallTitle">Fort de Pomègues</h3>
-                            </figcaption>
-                        </figure>
-                    </a>
-                    <a href="#activity">
-                        <figure class="activityBlocMarginOff activitySmallBlock activityBlockProperty activityLink">
-                            <div class="activityDivImg">
-                                <img class="activityImg" src="images\activites\3_medium\kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul">
-                            </div>
-                            <figcaption>
-                                <h3 class="activitySmallTitle">Îles du Frioul</h3>
-                            </figcaption>
-                        </figure>
-                    </a>
+                <div class="activityBlockLeft">
+                    <div class="activityColumn1">
+                        <a class="activityPadding" href="#activity">
+                            <figure class="activityBlock activityXLargeBlock activityLink">
+                                <div class="activityDivImg">
+                                    <img class="activityImg" src="images\activites\3_medium\reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">
+                                </div>
+                                <figcaption>
+                                    <h3 class="activitySmallTitle">Vieux Port</h3>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="activityColumn2">
+                        <a class="activityPadding" href="#activity">
+                            <figure class="activityBlock activityLargeBlock activityLink">
+                                <div class="activityDivImg">
+                                    <img class="activityImg" src="images\activites\3_medium\paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
+                                </div>
+                                <figcaption>
+                                    <h3 class="activitySmallTitle">Fort de Pomègues</h3>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <a href="#activity">
+                            <figure class="activityBlock activitySmallBlock activityLink">
+                                <div class="activityDivImg">
+                                    <img class="activityImg" src="images\activites\3_medium\kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul">
+                                </div>
+                                <figcaption>
+                                    <h3 class="activitySmallTitle">Îles du Frioul</h3>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
                 </div>
-                <a href="#activity">
-                    <figure class="activityBlock activityLongBlockProperty activityLink">
-                        <div class="activityDivImg">
-                            <img class="activityImg" src="images\activites\3_medium\kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques">
-                        </div>
-                        <figcaption>
-                            <h3 class="activitySmallTitle">Parc National des Calanques</h3>
-                        </figcaption>
-                    </figure>
-                </a>
-                <div class="activityBlock">
-                    <a href="#activity">
-                        <figure class="activityBlocMarginOff activityMediumBlock activityBlockProperty activityLink">
-                            <div class="activityDivImg">
-                                <img class="activityImg" src="images\activites\3_medium\florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
-                            </div>
-                            <figcaption>
-                                <h3 class="activitySmallTitle">Notre-Dame-de-la-Garde</h3>
-                            </figcaption>
-                        </figure>
-                    </a>
-                    <a href="#activity">
-                        <figure class="activityBlocMarginOff activityMediumBlock activityBlockProperty activityLink">
-                            <div class="activityDivImg">
-                                <img class="activityImg" src="images\activites\3_medium\lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">
-                            </div>
-                            <figcaption>
-                                <h3 class="activitySmallTitle">Parc Longchamp</h3>
-                            </figcaption>
-                        </figure>
-                    </a>
-                </div>  
-                
+                <div class="activityBlockRight">
+                    <div class="activityColumn3">
+                        <a class="activityPadding" href="#activity">
+                            <figure class="activityBlock activityXLargeBlock activityLink">
+                                <div class="activityDivImg">
+                                    <img class="activityImg" src="images\activites\3_medium\kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques">
+                                </div>
+                                <figcaption>
+                                    <h3 class="activitySmallTitle">Parc National des Calanques</h3>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div  class="activityColumn4">
+                        <a class="activityPadding" href="#activity">
+                            <figure class="activityBlock activityMediumBlock activityLink">
+                                <div class="activityDivImg">
+                                    <img class="activityImg" src="images\activites\3_medium\florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
+                                </div>
+                                <figcaption>
+                                    <h3 class="activitySmallTitle">Notre-Dame-de-la-Garde</h3>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <a href="#activity">
+                            <figure class="activityBlock activityMediumBlock activityLink">
+                                <div class="activityDivImg">
+                                    <img class="activityImg" src="images\activites\3_medium\lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">
+                                </div>
+                                <figcaption>
+                                    <h3 class="activitySmallTitle">Parc Longchamp</h3>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
