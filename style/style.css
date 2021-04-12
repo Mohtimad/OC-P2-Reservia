@@ -429,10 +429,10 @@ button{
 
 .filterLink:hover{
     
-    border: 2px solid #0065FC;
+    border: 2px solid #F2F2F2;
     background-color: #0065FC;
     color: white;
-    transition: .5s;
+    transition: .3s;
 }
 
 .filterIcon{
