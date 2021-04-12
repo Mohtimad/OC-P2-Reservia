@@ -48,9 +48,14 @@
         justify-content: space-between;
     }
 
-    .accommodationArticle{
-        width: auto;
+    .accommodationDisplay{
+        width: 100%;
     }
+
+    .accommodationBlock{
+        flex-direction: column;
+    }
+
 
     .activityBlockLeft, .activityBlockRight{
         justify-content: space-around;
@@ -189,15 +194,14 @@
         justify-content: space-between;
     }
 
-
     #accommodation{
         margin: 0 40px 0 0 ;
         max-width: 880px;
         background-color: #F2F2F2;
     }
 
-    .accommodationArticle{
-        max-width: 245px;
+    .accommodationLink{
+        width: 245px;
     }
         
     .activityContener{
@@ -308,6 +312,8 @@
         text-decoration: underline;
     }
 }
+
+
 
 body{
     margin: auto;
@@ -625,7 +631,6 @@ aside{
     display: block;
     box-shadow: 2px 2px 30px rgb(201, 201, 201), -2px -2px 30px rgb(201, 201, 201);
 }
-
 
 .asideLink:hover{
     transform: scale(1.05);
