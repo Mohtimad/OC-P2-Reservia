@@ -55,7 +55,7 @@ form {
 	flex-direction: row;
 }
 
-form > * {
+form>* {
 	border: 1px solid #F2F2F2;
 	padding: 15px;
 	margin: 0;
@@ -63,7 +63,7 @@ form > * {
 	font-weight: bold;
 }
 
-form > input::placeholder {
+form>input::placeholder {
 	color: black;
 	opacity: 1;
 }
@@ -80,7 +80,8 @@ label {
 button {
 	background-color: #0065FC;
 	color: white;
-	font-size: 0.8rem;
+	font-size: 0.9rem;
+	cursor: pointer;
 }
 
 .searchBlock div:nth-child(1) {
@@ -183,7 +184,7 @@ button {
 	flex-direction: column;
 }
 
-#accommodation > div {
+#accommodation>div {
 	margin: 0;
 	padding: 0;
 	display: flex;
@@ -301,7 +302,7 @@ aside article {
 	font-size: 0.6rem;
 }
 
-.asideInfo > div {
+.asideInfo>div {
 	height: 100%;
 	display: flex;
 	flex-direction: column;
@@ -436,9 +437,7 @@ footer div {
 /* FOOTER END */
 
 @media screen and (min-width: 1440px) {
-
 	/*DESKTOP*/
-
 	body {
 		margin: auto;
 		max-width: 1440px;
@@ -496,7 +495,7 @@ footer div {
 	#accommodation * a {
 		width: 245px;
 	}
-    #activity h2 {
+	#activity h2 {
 		padding-left: 30px;
 	}
 	.activityContener {
@@ -529,23 +528,14 @@ footer div {
 }
 
 @media screen and (min-width: 751px) {
-
 	/*DESKTOP & TABLET*/
-
 	.buttonMobile {
 		display: none;
 	}
 	button {
-		background-color: #0065FC;
-		color: white;
-		font-size: 0.8rem;
 		border-radius: 0 15px 15px 0;
 	}
-	button:hover {
-		text-decoration: underline;
-	}
-
-	.activityContener figure{
+	.activityContener figure {
 		margin: 0;
 	}
 	footer div {
@@ -554,9 +544,7 @@ footer div {
 }
 
 @media screen and (max-width: 1439px) and (min-width: 751px) {
-
 	/*TABLET*/
-
 	aside article {
 		display: flex;
 		justify-content: space-around;
@@ -581,7 +569,7 @@ footer div {
 		height: 45%;
 		padding: 0 10px;
 	}
-	#accommodation article{
+	#accommodation article {
 		width: 33.33%;
 	}
 	.activityColumn2,
@@ -605,7 +593,7 @@ footer div {
 		display: block;
 		width: 100%;
 	}
-	[class^=activityColumn] > a:nth-child(1) {
+	[class^=activityColumn]>a:nth-child(1) {
 		margin-right: 40px;
 	}
 	.activityBlockLeft {
@@ -614,9 +602,7 @@ footer div {
 }
 
 @media screen and (max-width: 1439px) {
-
 	/*TABLET & MOBILE*/
-
 	.firstBlock {
 		flex-direction: column-reverse;
 	}
@@ -630,10 +616,9 @@ footer div {
 		grid-template-areas: "a . b" "c c c";
 		align-items: center;
 	}
-
 	header img {
-	grid-area: a;	
-	margin-left: 30px;
+		grid-area: a;
+		margin-left: 30px;
 	}
 	.registerBtn {
 		grid-area: b;
@@ -677,9 +662,7 @@ footer div {
 }
 
 @media screen and (max-width: 750px) {
-
 	/*MOBILE*/
-
 	.buttonDesktopTablet {
 		display: none;
 	}
@@ -719,7 +702,7 @@ footer div {
 	#accommodation article {
 		width: 100%;
 	}
-	#accommodation > div  {
+	#accommodation>div {
 		flex-direction: column;
 	}
 	.activityContener div {
