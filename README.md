@@ -1,5 +1,4 @@
-# Openclassrooms Projet2
-# RESERVIA
+# Réservia - Projet 02
 Transformez une maquette en site web !
 
 ## Fonctionnalités
